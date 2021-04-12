@@ -17,11 +17,11 @@ function createPhotoMap () {
   var csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS9ZuoLzXsO-fEC_dU8nRASZdjFMAbxGwDE--rI-FQwZvsG-IvvheyNBdUMxx6wXgQWDaVoX6c4GnpF/pubhtml?gid=0&single=true';
   
   // create map object with center lat/lon and zoom level
-  var map = L.map('map').setView([40.76, 111.89], 3);
+  var map = L.map('map').setView([40.76, 111.89], 13);
   
   // create basemap object. See examples at https://leaflet-extras.github.io/leaflet-providers/preview/
   var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-	maxZoom: 17,
+	maxZoom: 3,
 	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 }).addTo(map);
   
